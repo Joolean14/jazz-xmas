@@ -1,0 +1,147 @@
+/* FONTS =============================================================================================== */
+
+h1, h2, h3 {
+    font-family: 'Mountains of Christmas', cursive;
+    color: #ffd700 !important;
+}
+
+p, ul, li, a {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* WAPP BTN =============================================================================================== */
+
+.wapp-btn:hover {
+  -webkit-animation-name: wiggle;
+  -ms-animation-name: wiggle;
+  -ms-animation-duration: 1000ms;
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes wiggle {
+  0% {-webkit-transform: rotate(10deg);}
+  25% {-webkit-transform: rotate(-10deg);}
+  50% {-webkit-transform: rotate(20deg);}
+  75% {-webkit-transform: rotate(-5deg);}
+  100% {-webkit-transform: rotate(0deg);}
+}
+
+@-ms-keyframes wiggle {
+  0% {-ms-transform: rotate(1deg);}
+  25% {-ms-transform: rotate(-1deg);}
+  50% {-ms-transform: rotate(1.5deg);}
+  75% {-ms-transform: rotate(-5deg);}
+  100% {-ms-transform: rotate(0deg);}
+}
+
+@keyframes wiggle {
+  0% {transform: rotate(10deg);}
+  25% {transform: rotate(-10deg);}
+  50% {transform: rotate(20deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}
+
+.wapp-btn {
+	position:fixed;
+	bottom:40px;
+	right:40px;
+  z-index:100;
+  
+}
+
+.wapp-img {
+  height: 110px;
+}
+
+
+.my-float{
+	margin-top:16px;
+}
+
+.wider-td {
+    width: 60% !important; /* Adjust the width as needed */
+  }
+
+
+/* SLIDER ====================================================================================================== */
+
+.slider-text {
+    position: absolute;
+    right: 0;
+    bottom: 0
+  }
+  
+#slider .card-content{
+    max-width: 50%;
+  }
+  
+#slider{
+    overflow: hidden;
+  }
+  
+@media screen and (max-width: 1023px) {
+    #slider .card-content{
+      display: none;
+    }
+  }
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.item-slide img {
+  max-width: 1200px;
+}
+
+.caption-container {
+  color: white;
+}
+
+
+/* CONSENT */
+
+/* .cc-nb-reject, .cc-nb-okagree {
+  background-color: #eaeaea !important;
+} */
+
+.has-green-background {
+  background-color: #0ca90c !important;
+}
+
+.has-red-background {
+  background-color: #ce0d0d !important;
+}
